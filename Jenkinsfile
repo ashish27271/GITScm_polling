@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('GitHub hook trigger') {
       steps {
-        echo 'Second Successful build after multiple failure'
+        echo 'Third Successful build after multiple failure'
           }
     }
   }
