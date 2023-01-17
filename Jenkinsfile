@@ -1,5 +1,5 @@
 pipeline {
-  agent {'ashish'}
+  agent any
   stages {
     stage('GitHub hook trigger') {
       steps {
