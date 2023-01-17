@@ -1,11 +1,10 @@
 pipeline {
-  agent { docker { image 'cameronmcnz/ant-jdk8-git:latest' } }
+  agent any { }
   stages {
     stage('GitHub Jenkins Ant Docker Build') {
       steps {
-        git 'https://github.com/learn-devops-fast/rps-ant.git'
-        sh 'ant clean compile test package war'
-      }
+        git 'https://github.com/ashish27271/GITScm_polling.git'
+          }
     }
   }
 }
